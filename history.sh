@@ -118,7 +118,8 @@ main() {
     fi
     
     # 清理临时文件
-    rm -f "$places_db"
+    rm -f "$places_db" "$favicons_db" "$places_db-shm" "$places_db-wal" "$favicons_db-shm" "$favicons_db-wal"
+
     
     # 结束XML输出
     echo "</items>"
